@@ -1,0 +1,16 @@
+/**
+ * Represents an array.
+ */
+class Array
+{
+    /** Constructs a new Array of the given size. */
+    Array(int size) {
+        return Memory.alloc(size);
+    }
+
+    /** Deletes/deallocates this array. */
+    void dispose() {
+        Memory.deAlloc(this);
+        return;
+    }
+}
