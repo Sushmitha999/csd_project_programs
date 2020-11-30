@@ -5,35 +5,25 @@ class Main {
         String i;
 
         s = new String(6); // capacity 6, make sure that length 5 is displayed
-        s = s.appendChar(97);
-        s = s.appendChar(98);
-        s = s.appendChar(99);
-        s = s.appendChar(100);
-        s = s.appendChar(101);
+        s = s.appendChar('a');
+        s = s.appendChar('b');
+        s = s.appendChar('c');
+        s = s.appendChar('d');
+        s = s.appendChar('e');
         Output.printString("new,appendChar: ");
         Output.printString(s);                // new, appendChar: abcde
         Output.println();
     
-        i = new String(6);
-        i.setInt(12345);
-        Output.printString("setInt: ");
-        Output.printString(i);                // setInt: 12345
-        Output.println();
-
-        i.setInt(-32767);
-        Output.printString("setInt: ");
-        Output.printString(i);                // setInt: -32767
-        Output.println();
         
         Output.printString("length: ");
         Output.printInt(s.length());          // length: 5
         Output.println();
         
         Output.printString("charAt[2]: ");
-        Output.printInt(s.charAt(2));         // charAt[2]: 99
+        Output.printInt(s.charAt(2));         // charAt[2]: c
         Output.println();
         
-        s.setCharAt(2, 45);
+        s.setCharAt(2, '-');
         Output.printString("setCharAt(2,'-'): ");     
         Output.printString(s);                // setCharAt(2,'-'): ab-de
         Output.println();
