@@ -1,6 +1,6 @@
 class Math {
     static Array twoToThe;
-    Math() {
+    void init() {
         twoToThe = new Array(16);
         twoToThe[0] = 1;
         twoToThe[1] = 2;

@@ -3,19 +3,19 @@ class Main
 void main()
 {
     s1 = new String(7);
-    s1 = s1.appendChar(97);
-    s1 = s1.appendChar(98);
-    s1 = s1.appendChar(99);
-    s1 = s1.appendChar(100);
-    s1 = s1.appendChar(101);
-	s1 = s1.appendChar(102);
-    s1 = s1.appendChar(103);        //string-1: abcdefg
+    s1 = s1.appendChar('a');
+    s1 = s1.appendChar('b');
+    s1 = s1.appendChar('c');
+    s1 = s1.appendChar('d');
+    s1 = s1.appendChar('e');
+	s1 = s1.appendChar('f');
+    s1 = s1.appendChar('g');        //string-1: abcdefg
     l1 = s1.length();
 
     s2 = new String(3);
-    s2 = s2.appendChar(99);
-    s2 = s2.appendChar(100);
-    s2 = s2.appendChar(101);        //string-2: cde
+    s2 = s2.appendChar('c');
+    s2 = s2.appendChar('d');
+    s2 = s2.appendChar('e');        //string-2: cde
     l2 = s2.length();
 
     int i, j;
