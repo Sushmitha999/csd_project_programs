@@ -25,6 +25,12 @@ class List{
     //     }
     //     next.update(node);
 	// }
+	int getData(){
+		return data;
+	}
+	List getNext(){
+		return next;
+	}
 	void dispose(){
 		if(next == null){
             Memory.deAlloc(this);
